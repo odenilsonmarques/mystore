@@ -246,3 +246,29 @@ footer h6 {
 .nav-menu-footer li a {
     color: #fff;
 }
+
+
+
+.details-bg {
+    background-color: #F5F5F5;
+}
+
+tabletbody {
+    background-color: #F5F5F5;
+    /* Cor de fundo cinza claro */
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    width: 100%;
+    padding: 1rem;
+}
+
+table.variations th,
+table.variations td {
+    padding: 0.75rem;
+    vertical-align: middle;
+}
+
+table.variations label {
+    font-weight: bold;
+    color: #333;
+}

@@ -26,45 +26,39 @@ get_header();
 <div class="container">
 
 	<div class="row">
-		<?php wc_print_notices(); ?>
+		<p class="mt-2"><?php wc_print_notices(); ?></p>
 
 		<!-- Coluna da esquerda: título, referência, avaliação, detalhes -->
-		<div class="col-md-3 border mt-2">
-			<h1 class="product_title mt-2"><?php the_title(); ?></h1>
-			<p><strong>Referência:</strong> <?php echo get_post_meta(get_the_ID(), '_sku', true); ?></p>
+		<div class="col-md-3 mt-4 details-bg rounded-3 " style="border:">
+			<h3 class="product_title mt-2 fw-bold"><?php the_title(); ?></h3>
+			<p class="text-dark"><strong>Referência:</strong> <?php echo get_post_meta(get_the_ID(), '_sku', true); ?></p>
 
 			<?php
 			global $product;
-
 			if (! is_a($product, 'WC_Product')) {
 				$product = wc_get_product(get_the_ID());
 			}
-
 			woocommerce_template_single_rating();
 			?>
 
-
-			<div class="product-meta mt-2">
-				<p><strong>Categoria:</strong> <?php echo wc_get_product_category_list(get_the_ID()); ?></p>
-				<p><strong>Tags:</strong> <?php echo wc_get_product_tag_list(get_the_ID()); ?></p>
+			<div class="product-meta" style="margin-top: -15px;">
+				<p class="text-dark"><strong>Categoria:</strong> <?php echo wc_get_product_category_list(get_the_ID()); ?></p>
+				<!-- <p><strong>Tags:</strong> <?php echo wc_get_product_tag_list(get_the_ID()); ?></p> -->
 			</div>
-
-			<?php the_excerpt(); ?>
+			<p class="text-dark" style="margin-top: -15px; margin-bottom:1px"><strong>Descrição:</strong><?php the_excerpt(); ?></p>
 		</div>
 
 		<!-- Coluna do meio: imagem principal e galeria -->
-		<div class="col-md-5 border mt-2">
-			<div class="d-flex align-items-start product-gallery-wrapper mt-2">
+		<div class="col-md-6 mt-4 rounded-3 text-center">
+			<div class="d-flex product-gallery-wrapper rounded-3 bg-ligth border ps-5 pe-5 pt-4 shadow">
 				<?php woocommerce_show_product_images(); ?>
 			</div>
 		</div>
 
-
-
 		<!-- Coluna da direita: preço, variações, botão de comprar -->
-		<div class="col-md-4 border mt-2">
-			<div class="mt-2">
-				<?php woocommerce_template_single_price(); ?>
+		<div class="col-md-3 mt-4 details-bg rounded-3 ml-3">
+			<div class="mt-2 ">
+				<span class="fw-bolder fs-5 text-dark"><?php woocommerce_template_single_price(); ?></span>
 			</div>
 
 			<div class="mt-2">
