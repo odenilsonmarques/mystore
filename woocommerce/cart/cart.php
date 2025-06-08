@@ -16,9 +16,7 @@
  */
 
 defined( 'ABSPATH' ) || exit;
-error_log('*** cart.php do tema filho está carregando ***');
-echo '<h1 style="color:red">TESTE DO TEMA FILHO - CART.PHP</h1>';
-die(); // força a interrupção
+
 
 
 

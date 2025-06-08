@@ -272,3 +272,57 @@ table.variations label {
     font-weight: bold;
     color: #333;
 }
+
+/* Estilo personalizado para o botão "Continuar para finalização" no carrinho (WooCommerce Cart Block)  */
+
+.wc-block-cart__submit-button.contained {
+    background-color: #9ab815; /* Verde, troque pela cor desejada */
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.wc-block-cart__submit-button.contained:hover {
+    background-color: #565b68; /* Cor ao passar o mouse */
+    color: #fff;
+}
+
+
+/* ===== Remover sublinhado do nome do produto nos blocos do carrinho ===== */
+.wc-block-components-product-name {
+    text-decoration: none !important;
+    color: #333; /* ajuste a cor conforme necessário */
+    font-weight: 600;
+}
+
+
+/* Estilo personalizado para o título da pagina de carrinho */
+h1.entry-title{
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Área superior dos totais do carrinho */
+.wc-block-components-sidebar .wp-block-woocommerce-cart-order-summary-block {
+    background-color: #F5F5F5; /* Altere conforme desejado */
+    padding: 20px;
+    border-radius: 7px;
+    /* border:1px solid #111; */
+    margin-bottom: 5px;
+}
+
+/* Remove a cor de fundo do container geral para não afetar o botão */
+.wc-block-cart__sidebar {
+    background-color: transparent !important;
+    padding: 10px;
+    /* border:1px solid #111; */
+    
+}
+
+
+

@@ -1,7 +1,9 @@
 </div>
 </main>
-<footer class="bg-dark text-light pt-5 pb-3 mt-5">
-    <div class="container">
+
+
+<footer class="text-light pt-5 pb-3 mt-5 bg-dark">
+    <div class="container ">
         <div class="row">
 
             <!-- coluna 1 -->
@@ -82,5 +84,4 @@
 
 <?php wp_footer(); ?>
 </body>
-
 </html>

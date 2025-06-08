@@ -29,7 +29,7 @@ get_header();
 		<p class="mt-2"><?php wc_print_notices(); ?></p>
 
 		<!-- Coluna da esquerda: título, referência, avaliação, detalhes -->
-		<div class="col-md-3 mt-4 details-bg rounded-3 " style="border:">
+		<div class="col-md-3 mt-4 details-bg rounded-3">
 			<h3 class="product_title mt-2 fw-bold"><?php the_title(); ?></h3>
 			<p class="text-dark"><strong>Referência:</strong> <?php echo get_post_meta(get_the_ID(), '_sku', true); ?></p>
 
