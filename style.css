@@ -274,21 +274,22 @@ table.variations label {
 }
 
 /* Estilo personalizado para o botão "Continuar para finalização" no carrinho (WooCommerce Cart Block)  */
-
-.wc-block-cart__submit-button.contained {
-    background-color: #9ab815; /* Verde, troque pela cor desejada */
+.wc-block-cart__submit-button.contained{
+    background-color: #9ab815;
+    /* Verde, troque pela cor desejada */
     color: #fff;
     border: none;
     padding: 15px 25px;
     font-weight: bold;
     text-align: center;
-    text-decoration: none;
+    text-decoration: none !important;
     border-radius: 5px;
     display: inline-block;
 }
 
 .wc-block-cart__submit-button.contained:hover {
-    background-color: #565b68; /* Cor ao passar o mouse */
+    background-color: #689f38;
+    /* Cor ao passar o mouse */
     color: #fff;
 }
 
@@ -296,20 +297,23 @@ table.variations label {
 /* ===== Remover sublinhado do nome do produto nos blocos do carrinho ===== */
 .wc-block-components-product-name {
     text-decoration: none !important;
-    color: #333; /* ajuste a cor conforme necessário */
+    color: #333;
+    /* ajuste a cor conforme necessário */
     font-weight: 600;
 }
 
 
 /* Estilo personalizado para o título da pagina de carrinho */
-h1.entry-title{
+h1.entry-title {
     font-weight: normal;
     text-align: center;
+    margin-top:20px;
 }
 
 /* Área superior dos totais do carrinho */
 .wc-block-components-sidebar .wp-block-woocommerce-cart-order-summary-block {
-    background-color: #F5F5F5; /* Altere conforme desejado */
+    background-color: #F5F5F5;
+    /* Altere conforme desejado */
     padding: 20px;
     border-radius: 7px;
     /* border:1px solid #111; */
@@ -321,8 +325,35 @@ h1.entry-title{
     background-color: transparent !important;
     padding: 10px;
     /* border:1px solid #111; */
-    
+
+}
+
+
+.wc-block-components-sidebar .wp-block-woocommerce-cart-totals-block h2{
+ font-size: 80px;
 }
 
 
 
+
+
+
+
+/* Estiliza diretamente o botão "Finalizar pedido" */
+.wc-block-components-checkout-place-order-button.contained {
+    background-color: #8bc34a !important; /* cor de fundo */
+    color: white !important; /* cor do texto */
+    border: none !important;
+    border-radius: 8px !important; /* borda arredondada */
+    font-weight: bold !important;
+    font-size: 16px !important;
+    padding: 14px 24px !important;
+    cursor: pointer !important;
+    /* width: 100% !important; */
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.wc-block-components-checkout-place-order-button.contained:hover {
+    background-color: #689f38 !important; /* cor ao passar o mouse */
+}
