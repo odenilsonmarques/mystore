@@ -66,7 +66,7 @@ get_header();
 			</div>
 
 			<div class="mt-3">
-				<small class="text-muted">Vendido e entregue por sua loja</small>
+				<small class="text-muted">Vendido e entregue por <?php echo get_bloginfo('name'); ?></small>
 			</div>
 		</div>
 	</div>

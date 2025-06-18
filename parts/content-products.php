@@ -44,7 +44,7 @@
                            
                             <a href="<?php the_permalink(); ?>">
                                 <?php if (has_post_thumbnail()) : ?>
-                                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" class="card-img-top" alt="<?php the_title(); ?>">
+                                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" class="card-img-top rounded" alt="<?php the_title(); ?>">
                                 <?php else : ?>
                                     <img src="<?php echo wc_placeholder_img_src(); ?>" class="card-img-top" alt="Imagem padrão">
                                 <?php endif; ?>

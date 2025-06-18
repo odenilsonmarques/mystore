@@ -196,19 +196,31 @@ button.btn-custom-buscar:hover {
 
 
 
-.card {
-    border: none;
-    border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+#product-list .card {
+    border: 1px solid #b4d518;
+    padding: 5px;
+    border-radius: 18px;
+    /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); */
+
     /* transition: transform 0.2s ease, box-shadow 0.2s ease; */
 }
 
-.card:hover {
+#product-list .card:hover {
     /* transform: translateY(-5px); */
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-    border: 1px solid #b4d518;
+    border: 1px solid #565b68;
     /* Adiciona uma borda sutil ao passar o mouse */
 }
+
+/* removendo a borda que aparece ao clicar na imagem do card */
+.card a:focus,
+.card a:active,
+.card a img:focus,
+.card a img:active {
+    outline: none;
+    box-shadow: none;
+}
+
 
 .card-img-top {
     border-top-left-radius: 12px;
@@ -216,6 +228,7 @@ button.btn-custom-buscar:hover {
     object-fit: cover;
     height: 250px;
     /* você pode ajustar isso conforme o layout */
+    text-decoration: none;
 }
 
 .card-body h6 {
@@ -224,17 +237,17 @@ button.btn-custom-buscar:hover {
 }
 
 .card-body .btn-primary {
-    background-color: #565b68;
+    background-color: #b4d518;
     border: none;
     font-weight: 600;
     padding: 6px 12px;
     transition: background-color 0.2s ease;
-    color: #fff;
+    color: #111111;
     /* texto branco para bom contraste */
 }
 
 .card-body .btn-primary:hover {
-    background-color: #b4d518;
+    background-color: #565b68;
 }
 
 footer h6 {
@@ -277,7 +290,7 @@ table.variations label {
 .wc-block-cart__submit-button.contained{
     background-color: #9ab815;
     /* Verde, troque pela cor desejada */
-    color: #fff;
+    color: #111111;
     border: none;
     padding: 15px 25px;
     font-weight: bold;
@@ -288,7 +301,7 @@ table.variations label {
 }
 
 .wc-block-cart__submit-button.contained:hover {
-    background-color: #689f38;
+    background-color: #565b68;
     /* Cor ao passar o mouse */
     color: #fff;
 }
@@ -334,11 +347,6 @@ h1.entry-title {
 }
 
 
-
-
-
-
-
 /* Estiliza diretamente o botão "Finalizar pedido" */
 .wc-block-components-checkout-place-order-button.contained {
     background-color: #8bc34a !important; /* cor de fundo */
@@ -356,4 +364,59 @@ h1.entry-title {
 /* Efeito ao passar o mouse */
 .wc-block-components-checkout-place-order-button.contained:hover {
     background-color: #689f38 !important; /* cor ao passar o mouse */
+}
+
+
+
+/* Estiliza o botão "Adicionar ao carrinho" na página de detalhes do produto */
+.single_add_to_cart_button {
+    background-color: #b4d518 !important; /* cor de fundo */
+    color: black !important; /* cor do texto */
+    border: none !important;
+    border-radius: 8px !important; /* borda arredondada */
+    font-weight: bold !important;
+    font-size: 16px !important;
+    padding: 14px 24px !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease;
+}
+.single_add_to_cart_button:hover {
+    background-color: #689f38 !important; /* cor ao passar o mouse */
+}
+
+
+
+/* Estilo personalizado para o campo qauntidade de produtos na página de detalhes do produto */
+.input-text {
+    width: 100px !important ;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #565b68 !important;
+    font-size: 20px;
+    
+}
+
+/* Estilo personalizado para o resumo do pedido na página de checkout  */
+.wc-block-components-checkout-order-summary__content{
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 7px;
+    /* border:1px solid #111; */
+    /* margin-bottom: 5px; */
+}
+
+
+p.wc-block-components-checkout-order-summary__title-text{
+    color: #111;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wp-block-woocommerce-checkout-order-summary-block {
+    align-items: center;
+    
+
+   
+    /* margin-top: 16px !important; */
+    background-color: #b4d518;
 }
