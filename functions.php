@@ -197,3 +197,7 @@ function pass_ajax_url_to_script()
     wp_localize_script('jquery', 'ajax_object', array('ajax_url' => admin_url('admin-ajax.php')));
 }
 add_action('wp_enqueue_scripts', 'pass_ajax_url_to_script');
+
+
+
+

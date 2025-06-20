@@ -17,6 +17,13 @@ Template: storefront
     font-size: 22px;
 }
 
+a.navbar-brand:focus{
+   outline: none;
+    /* box-shadow: none; */
+}
+
+
+
 .main-menu a.navbar-brand:hover {
     color: #b4d518;
 }
@@ -43,6 +50,14 @@ Template: storefront
     display: flex;
     align-items: center;
     gap: 4px;
+}
+
+
+.main-menu li a:focus{
+    outline: none;
+    /* Remove o contorno padrão do link */
+    box-shadow: none;
+    /* Remove o efeito de sombra ao focar no link */
 }
 
 .main-menu li a:hover {
@@ -199,7 +214,7 @@ button.btn-custom-buscar:hover {
 #product-list .card {
     border: 1px solid #b4d518;
     padding: 5px;
-    border-radius: 18px;
+    /* border-radius: 18px; */
     /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); */
 
     /* transition: transform 0.2s ease, box-shadow 0.2s ease; */
@@ -355,7 +370,7 @@ h1.entry-title {
     border-radius: 8px !important; /* borda arredondada */
     font-weight: bold !important;
     font-size: 16px !important;
-    padding: 14px 24px !important;
+    /* padding: 14px 24px !important; */
     cursor: pointer !important;
     /* width: 100% !important; */
     transition: background-color 0.3s ease;
@@ -414,9 +429,142 @@ p.wc-block-components-checkout-order-summary__title-text{
 
 .wp-block-woocommerce-checkout-order-summary-block {
     align-items: center;
-    
-
-   
     /* margin-top: 16px !important; */
     background-color: #b4d518;
+}
+
+
+/* personalizando o cabeçalho da tabela do carrinho */
+.wc-block-cart-items__header th {
+    font-weight: bold;
+    color: #111;
+    font-size: 13px;
+}
+
+
+/* personalizando o link retornar para carrinho na página de checkout */
+.wc-block-components-checkout-return-to-cart-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: #6c757d; /* cinza escuro tipo Bootstrap "secondary" */
+    color: #fff !important; /* texto branco */
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.wc-block-components-checkout-return-to-cart-button:hover {
+    background-color: #5a6268; /* tom mais escuro no hover */
+    color: #fff;
+    text-decoration: none;
+}
+
+.wc-block-components-checkout-return-to-cart-button svg {
+    fill: currentColor; /* Faz o ícone seguir a cor do texto */
+    color: #fff;
+}
+
+
+
+
+
+.wc-block-cart__empty-cart__title::before {
+    content: none !important;
+    display: none !important;
+    background: none !important;
+    margin-top: -40px;
+}
+
+
+.wc-block-cart__empty-cart__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    /* margin: 0 auto 10px auto; */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%2386b817" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zM7.16 14h9.68c.75 0 1.41-.41 1.75-1.03l3.58-6.49a.996.996 0 00-.89-1.48H5.21L4.27 2H1v2h2l3.6 7.59-1.35 2.44C4.16 14.37 4.98 16 6.3 16h12v-2H7.16l1.1-2h7.45c.75 0 1.41-.41 1.75-1.03l.27-.48H6.5l.66 1.2z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-top: -110px;
+    /* padding-top: -90px; */
+}
+
+
+
+
+
+/* personalizando a mensagem de carrinho vazio no WooCommerce Blocks */
+.wc-block-cart__empty-cart__title {
+    visibility: hidden;
+    position: relative;
+    height: 50px; /* Dá um espaço mínimo pra caber o texto */
+}
+
+.wc-block-cart__empty-cart__title::after {
+    content: "Seu carrinho está vazio!";
+    visibility: visible;
+    position: absolute;
+    /* left: 0;
+    right: 0;
+    top: 0; */
+    text-align: center;
+    color: #333; /* Cor do texto */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    font-weight: bold; /* Deixa o texto mais destacado */
+    width: 100%;
+    padding-top: 70px; /* Espaçamento para o ícone */
+    
+}
+
+
+/* personalizando a mensagem de novidades na loja que aparece no carrinho vazio */
+.wp-block-heading.has-text-align-center:not(.wc-block-cart__empty-cart__title)::before {
+    content: "Novidades na loja";
+    visibility: visible;
+    color: #333;
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+    display: block;
+}
+
+.wp-block-heading.has-text-align-center:not(.wc-block-cart__empty-cart__title) {
+    visibility: hidden;
+    height: 40px;
+    position: relative;
+}
+
+
+/* personalizando a lista dos produtos que aparecem abaixo do carrinho vazio */ 
+.wc-block-grid__products a {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 0;
+    padding: 0; */
+    /* list-style: none; */
+    border: 1px solid #b4d518;
+}
+
+/* personalizando o preço dos produtos que aparecem abaixo do carrinho vazio  */
+.wc-block-grid__product-price{
+    margin-top: 10px !important;
+    font-weight: bold !important;
+    font-size: 18px;
+}
+
+/* personalizando o botão de adicionar ao carrinho dos produtos que aparecem abaixo do carrinho vazio  */
+.wp-block-button__link {
+    background-color: #b4d518 !important;
+    color: #111111 !important;
+    font-weight: bold !important;
+    padding: 10px 20px !important;
+    border-radius: 8px !important;
+    transition: background-color 0.3s ease;
+}
+.wp-block-button__link:hover {
+    background-color: #565b68 !important;
+    color: #fff !important;
 }
