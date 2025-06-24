@@ -402,13 +402,13 @@ h1.entry-title {
 
 
 /* Estilo personalizado para o campo qauntidade de produtos na página de detalhes do produto */
-.input-text {
-    width: 100px !important ;
-    height: 40px;
-    border-radius: 8px;
-    border: 1px solid #565b68 !important;
-    font-size: 20px;
-    
+
+input.input-text.qty.text{
+    border:1px solid #b4d518! important;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+
 }
 
 /* Estilo personalizado para o resumo do pedido na página de checkout  */
@@ -567,4 +567,12 @@ p.wc-block-components-checkout-order-summary__title-text{
 .wp-block-button__link:hover {
     background-color: #565b68 !important;
     color: #fff !important;
+}
+
+
+
+
+/* este codigo oculta os botoes da tabela de detalhe de pedidos ao finalizar a compra */
+.woocommerce-order-details tfoot tr:last-child {
+    display: none !important;
 }
