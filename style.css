@@ -576,3 +576,49 @@ p.wc-block-components-checkout-order-summary__title-text{
 .woocommerce-order-details tfoot tr:last-child {
     display: none !important;
 }
+
+
+
+/* personalizando os formularios de login e registro do WooCommerce */
+.u-column1, .u-column2 {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: #9ab815 0px 0px 5px;
+    border-radius: 10px;
+}
+
+.woocommerce-form-login label, .woocommerce-form-register label {
+    color: #565b68;
+    font-size: 18px;
+}
+
+.woocommerce-form-login input[type="text"],
+.woocommerce-form-login input[type="password"], 
+.woocommerce-form-register input[type="email"] {
+    
+    border: 1px solid #b4d518;
+    border-radius: 8px;
+    padding: 9px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.woocommerce-form-login button[type="submit"],
+.woocommerce-form-register button[type="submit"] {
+    background-color: #b4d518;
+    color: #111111;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.show-password-input{
+  
+    background-color: #b4d518;
+    color: #111111;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
