@@ -738,6 +738,8 @@ a.product_type_simple:hover {
     color: #fff;
 }
 
+
+/* personalizar a ordenação e contagem de resultados na página de produtos */
 .woocommerce-ordering .orderby {
     border: 1px solid #b4d518;
     border-radius: 8px;
@@ -754,5 +756,30 @@ a.product_type_simple:hover {
 }
 
 .woocommerce-result-count{
-    margin-top:20px;
+    margin-top:17px;
+    font-size: 18px;
+}
+
+
+
+/* personalizar a exibição dos produtos na página de loja e categorias */ */
+a.woocommerce-LoopProduct-link{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.woocommerce-Price-amount{
+    font-size: 20px;
+    font-weight: bold;
+    color: #565b68;
+}
+
+
+
+
+
+.woocommerce-products-header h1{
+    margin-top: 20px;
 }
