@@ -25,7 +25,11 @@
                 <!-- FORMULÁRIO DE BUSCA -->
                 <form role="search" method="get" class="d-flex flex-grow-1 mx-3 pt-3" action="<?php echo esc_url(home_url('/')); ?>">
                     <div class="input-group">
-                        <input type="search" class="form-control custom-busca-borda" placeholder="Buscar produtos..." value="<?php echo get_search_query(); ?>" name="s" />
+                        <input type="search" class="form-control custom-busca-borda" id="live-search" placeholder="Buscar produtos..." value="<?php echo get_search_query(); ?>" name="s" />
+
+                        <!-- div para exibir o resultado da busca -->
+                        <div id="live-search-results"></div>
+
                         <button class="btn btn-outline-secondary btn-custom-buscar" type="submit">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.397h-.001l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zm-5.242 1.156a5 5 0 1 1 0-10 5 5 0 0 1 0 10z" />
@@ -93,6 +97,3 @@
     <!-- essas tag estao sendo fechadas no footer.php -->
     <main class="container mt-5 pt-5">
         <div class="row">
-
-        
-        
