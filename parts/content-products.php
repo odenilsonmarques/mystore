@@ -6,7 +6,7 @@
             <!-- <h3 class="py-4">Todos os Produtos</h3> -->
 
             <!-- Botões para filtrar por categoria-->
-            <div class="mb-4 text-center mt-4">
+            <div class="mb-4 text-center mt-4  d-none d-md-block">
                 <button class="btn btn-category filter-btn active  me-1" data-category="all">Todos</button>
                 <?php
                 $categories = get_terms(array(
@@ -21,6 +21,16 @@
               </button>';
                 }
                 ?>
+            </div>
+
+            <!-- Select de categorias (visível apenas no mobile) -->
+            <div class="mb-4 text-center d-block d-md-none" style="margin-top: 90px;">
+                <select id="category-select" class="form-select w-75 mx-auto">
+                    <option value="all">Selecione por categoria</option>
+                    <?php foreach ($categories as $category) : ?>
+                        <option value="<?php echo $category->term_id; ?>"><?php echo $category->name; ?></option>
+                    <?php endforeach; ?>
+                </select>
             </div>
         </div>
 
@@ -39,9 +49,9 @@
                 while ($query->have_posts()) : $query->the_post();
                     global $product;
             ?>
-                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="col-12 col-md-4 col-lg-3 mb-4">
                         <div class="card h-100">
-                           
+
                             <a href="<?php the_permalink(); ?>">
                                 <?php if (has_post_thumbnail()) : ?>
                                     <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" class="card-img-top rounded" alt="<?php the_title(); ?>">

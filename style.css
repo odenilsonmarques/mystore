@@ -785,7 +785,7 @@ a.woocommerce-LoopProduct-link{
 }
 
 
-/* personalizando a tabela de detalhes do cliente na página de pedidos */ */
+/* personalizando a tabela de detalhes do cliente na página de pedidos */ 
 .woocommerce-customer-details address {
     background-color: #f9f9f9;
     border: 1px solid #b4d518;
@@ -795,7 +795,7 @@ a.woocommerce-LoopProduct-link{
     font-size: 20px;
     color: #333;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    max-width: 450px;
+    max-width: 100%;
 }
 
 .woocommerce-customer-details address p {
@@ -811,3 +811,8 @@ a.woocommerce-LoopProduct-link{
     text-decoration: underline;
 }
 
+
+/* oculta a imagem do qrcode que aparece na pagina de pagamento, pra esse projeto ocultamos porque ja tem uma imagem de qrcode na pagina de detalhes do pedido, ficava duplicada */
+.mp-pix-image-container{
+    display: none;
+}

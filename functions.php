@@ -159,7 +159,7 @@ function filter_products()
         while ($query->have_posts()) : $query->the_post();
             global $product;
 ?>
-            <div class="col-6 col-md-4 col-lg-3 mb-4">
+            <div class="col-12 col-md-4 col-lg-3 mb-4">
                 <div class="card h-100">
                     <a href="<?php the_permalink(); ?>">
                         <?php if (has_post_thumbnail()) : ?>
