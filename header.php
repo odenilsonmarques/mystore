@@ -17,10 +17,13 @@
                     <!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.webp" alt="Logo" height="40" class="d-inline-block align-text-top"> -->
                 </a>
 
-                <!-- BOTÃO TOGGLE PARA MOBILE -->
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <!-- Botão de abertura do offcanvas -->
+                <button class="btn d-md-none ms-auto me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Abrir menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-list text-white" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.5 12.5a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13zm0-4a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13zm0-4a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13z" />
+                    </svg>
                 </button>
+
 
                 <!-- FORMULÁRIO DE BUSCA -->
                 <form role="search" method="get" class="d-flex flex-grow-1 mx-3 pt-3" action="<?php echo esc_url(home_url('/')); ?>">
@@ -40,7 +43,7 @@
                 </form>
 
                 <!-- MENU À DIREITA -->
-                <div class="collapse navbar-collapse flex-grow-0 justify-content-end" id="navbarNav">
+                <div class="collapse navbar-collapse flex-grow-0 " id="navbarNav">
                     <ul class="navbar-nav main-menu d-flex align-items-center">
                         <?php
                         wp_nav_menu(array(
@@ -83,16 +86,14 @@
                             </li>
                         <?php endif; ?>
                     </ul>
-
-                    <!-- <li class="nav-item list-unstyled ms-3">
-                        <a href="#" class="btn btn-custom fw-bold border-0 text-white">Entrar em Contato</a>
-                    </li> -->
-
-
                 </div>
             </div>
         </nav>
     </header>
+
+    <div class="offcanvas-container">
+        <?php get_template_part('parts/menu-offcanvas'); ?>
+    </div>
 
     <!-- essas tag estao sendo fechadas no footer.php -->
     <main class="container mt-5 pt-5">

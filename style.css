@@ -17,8 +17,8 @@ Template: storefront
     font-size: 22px;
 }
 
-a.navbar-brand:focus{
-   outline: none;
+a.navbar-brand:focus {
+    outline: none;
     /* box-shadow: none; */
 }
 
@@ -53,7 +53,7 @@ a.navbar-brand:focus{
 }
 
 
-.main-menu li a:focus{
+.main-menu li a:focus {
     outline: none;
     /* Remove o contorno padrão do link */
     box-shadow: none;
@@ -302,7 +302,7 @@ table.variations label {
 }
 
 /* Estilo personalizado para o botão "Continuar para finalização" no carrinho (WooCommerce Cart Block)  */
-.wc-block-cart__submit-button.contained{
+.wc-block-cart__submit-button.contained {
     background-color: #9ab815;
     /* Verde, troque pela cor desejada */
     color: #111111;
@@ -335,7 +335,7 @@ table.variations label {
 h1.entry-title {
     font-weight: normal;
     text-align: center;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 /* Área superior dos totais do carrinho */
@@ -357,17 +357,20 @@ h1.entry-title {
 }
 
 
-.wc-block-components-sidebar .wp-block-woocommerce-cart-totals-block h2{
- font-size: 80px;
+.wc-block-components-sidebar .wp-block-woocommerce-cart-totals-block h2 {
+    font-size: 80px;
 }
 
 
 /* Estiliza diretamente o botão "Finalizar pedido" */
 .wc-block-components-checkout-place-order-button.contained {
-    background-color: #8bc34a !important; /* cor de fundo */
-    color: white !important; /* cor do texto */
+    background-color: #8bc34a !important;
+    /* cor de fundo */
+    color: white !important;
+    /* cor do texto */
     border: none !important;
-    border-radius: 8px !important; /* borda arredondada */
+    border-radius: 8px !important;
+    /* borda arredondada */
     font-weight: bold !important;
     font-size: 16px !important;
     /* padding: 14px 24px !important; */
@@ -378,33 +381,39 @@ h1.entry-title {
 
 /* Efeito ao passar o mouse */
 .wc-block-components-checkout-place-order-button.contained:hover {
-    background-color: #689f38 !important; /* cor ao passar o mouse */
+    background-color: #689f38 !important;
+    /* cor ao passar o mouse */
 }
 
 
 
 /* Estiliza o botão "Adicionar ao carrinho" na página de detalhes do produto */
 .single_add_to_cart_button {
-    background-color: #b4d518 !important; /* cor de fundo */
-    color: black !important; /* cor do texto */
+    background-color: #b4d518 !important;
+    /* cor de fundo */
+    color: black !important;
+    /* cor do texto */
     border: none !important;
-    border-radius: 8px !important; /* borda arredondada */
+    border-radius: 8px !important;
+    /* borda arredondada */
     font-weight: bold !important;
     font-size: 16px !important;
     padding: 14px 24px !important;
     cursor: pointer !important;
     transition: background-color 0.3s ease;
 }
+
 .single_add_to_cart_button:hover {
-    background-color: #689f38 !important; /* cor ao passar o mouse */
+    background-color: #689f38 !important;
+    /* cor ao passar o mouse */
 }
 
 
 
 /* Estilo personalizado para o campo qauntidade de produtos na página de detalhes do produto */
 
-input.input-text.qty.text{
-    border:1px solid #b4d518! important;
+input.input-text.qty.text {
+    border: 1px solid #b4d518 ! important;
     border-radius: 10px;
     font-size: 15px;
     font-weight: bold;
@@ -412,7 +421,7 @@ input.input-text.qty.text{
 }
 
 /* Estilo personalizado para o resumo do pedido na página de checkout  */
-.wc-block-components-checkout-order-summary__content{
+.wc-block-components-checkout-order-summary__content {
     background-color: #F5F5F5;
     padding: 20px;
     border-radius: 7px;
@@ -421,7 +430,7 @@ input.input-text.qty.text{
 }
 
 
-p.wc-block-components-checkout-order-summary__title-text{
+p.wc-block-components-checkout-order-summary__title-text {
     color: #111;
     font-size: 20px;
     font-weight: bold;
@@ -448,8 +457,10 @@ p.wc-block-components-checkout-order-summary__title-text{
     align-items: center;
     gap: 8px;
     padding: 8px 16px;
-    background-color: #6c757d; /* cinza escuro tipo Bootstrap "secondary" */
-    color: #fff !important; /* texto branco */
+    background-color: #6c757d;
+    /* cinza escuro tipo Bootstrap "secondary" */
+    color: #fff !important;
+    /* texto branco */
     text-decoration: none;
     border-radius: 4px;
     font-weight: 500;
@@ -457,13 +468,15 @@ p.wc-block-components-checkout-order-summary__title-text{
 }
 
 .wc-block-components-checkout-return-to-cart-button:hover {
-    background-color: #5a6268; /* tom mais escuro no hover */
+    background-color: #5a6268;
+    /* tom mais escuro no hover */
     color: #fff;
     text-decoration: none;
 }
 
 .wc-block-components-checkout-return-to-cart-button svg {
-    fill: currentColor; /* Faz o ícone seguir a cor do texto */
+    fill: currentColor;
+    /* Faz o ícone seguir a cor do texto */
     color: #fff;
 }
 
@@ -501,7 +514,8 @@ p.wc-block-components-checkout-order-summary__title-text{
 .wc-block-cart__empty-cart__title {
     visibility: hidden;
     position: relative;
-    height: 50px; /* Dá um espaço mínimo pra caber o texto */
+    height: 50px;
+    /* Dá um espaço mínimo pra caber o texto */
 }
 
 .wc-block-cart__empty-cart__title::after {
@@ -512,12 +526,16 @@ p.wc-block-components-checkout-order-summary__title-text{
     right: 0;
     top: 0; */
     text-align: center;
-    color: #333; /* Cor do texto */
-    font-size: 1.2rem; /* Tamanho da fonte */
-    font-weight: bold; /* Deixa o texto mais destacado */
+    color: #333;
+    /* Cor do texto */
+    font-size: 1.2rem;
+    /* Tamanho da fonte */
+    font-weight: bold;
+    /* Deixa o texto mais destacado */
     width: 100%;
-    padding-top: 70px; /* Espaçamento para o ícone */
-    
+    padding-top: 70px;
+    /* Espaçamento para o ícone */
+
 }
 
 
@@ -538,7 +556,7 @@ p.wc-block-components-checkout-order-summary__title-text{
 }
 
 
-/* personalizando a lista dos produtos que aparecem abaixo do carrinho vazio */ 
+/* personalizando a lista dos produtos que aparecem abaixo do carrinho vazio */
 .wc-block-grid__products a {
     display: flex;
     flex-wrap: wrap;
@@ -549,7 +567,7 @@ p.wc-block-components-checkout-order-summary__title-text{
 }
 
 /* personalizando o preço dos produtos que aparecem abaixo do carrinho vazio  */
-.wc-block-grid__product-price{
+.wc-block-grid__product-price {
     margin-top: 10px !important;
     font-weight: bold !important;
     font-size: 18px;
@@ -564,6 +582,7 @@ p.wc-block-components-checkout-order-summary__title-text{
     border-radius: 8px !important;
     transition: background-color 0.3s ease;
 }
+
 .wp-block-button__link:hover {
     background-color: #565b68 !important;
     color: #fff !important;
@@ -580,22 +599,24 @@ p.wc-block-components-checkout-order-summary__title-text{
 
 
 /* personalizando os formularios de login e registro do WooCommerce */
-.u-column1, .u-column2 {
+.u-column1,
+.u-column2 {
     background-color: #fff;
     padding: 10px;
     box-shadow: #9ab815 0px 0px 5px;
     border-radius: 10px;
 }
 
-.woocommerce-form-login label, .woocommerce-form-register label {
+.woocommerce-form-login label,
+.woocommerce-form-register label {
     color: #565b68;
     font-size: 18px;
 }
 
 .woocommerce-form-login input[type="text"],
-.woocommerce-form-login input[type="password"], 
+.woocommerce-form-login input[type="password"],
 .woocommerce-form-register input[type="email"] {
-    
+
     border: 1px solid #b4d518;
     border-radius: 8px;
     padding: 9px;
@@ -615,8 +636,8 @@ p.wc-block-components-checkout-order-summary__title-text{
     transition: background-color 0.3s ease;
 }
 
-.show-password-input{
-  
+.show-password-input {
+
     background-color: #b4d518;
     color: #111111;
     padding: 10px 20px;
@@ -627,7 +648,7 @@ p.wc-block-components-checkout-order-summary__title-text{
 
 /* ocultamos campos de politica de privacidade do WooCommerce na tela de criar conta*/
 .woocommerce-form-register .woocommerce-privacy-policy-text {
-  display: none;
+    display: none;
 }
 
 
@@ -638,32 +659,41 @@ p.wc-block-components-checkout-order-summary__title-text{
 
 .woocommerce-order-overview {
     display: flex;
-    flex-wrap: wrap; /* Quebra linha se não couber */
-    gap: 20px; /* Espaçamento entre os itens */
-    justify-content: space-between; /* Espaço entre os itens */
-    list-style: none; /* Remove marcadores */
+    flex-wrap: wrap;
+    /* Quebra linha se não couber */
+    gap: 20px;
+    /* Espaçamento entre os itens */
+    justify-content: space-between;
+    /* Espaço entre os itens */
+    list-style: none;
+    /* Remove marcadores */
     padding: 0;
     margin: 0;
     background-color: #f9f9f9;
     border-radius: 8px;
     padding: 10px;
-    border:1px solid #b4d518;
-    
+    border: 1px solid #b4d518;
+
 }
 
 .woocommerce-order-overview li {
-    flex: 1 1 180px; /* largura mínima de cada item */
+    flex: 1 1 180px;
+    /* largura mínima de cada item */
     border: 1px solid #ccc;
     border-radius: 6px;
     padding: 10px;
     background: #fff;
     text-align: center;
-    border:1px solid #b4d518;
+    border: 1px solid #b4d518;
 }
+
 .woocommerce-order-overview.order_details {
-    position: relative; /* mantém */
-    overflow: hidden; /* força a renderização da borda arredondada completa */
-    border: 1px solid #b4d518; /* caso queira reforçar */
+    position: relative;
+    /* mantém */
+    overflow: hidden;
+    /* força a renderização da borda arredondada completa */
+    border: 1px solid #b4d518;
+    /* caso queira reforçar */
     border-radius: 8px;
 }
 
@@ -678,7 +708,7 @@ p.wc-block-components-checkout-order-summary__title-text{
     flex: 1 1 180px;
 }
 
-.woocommerce-order-overview__payment-method li{
+.woocommerce-order-overview__payment-method li {
     margin: 10px;
     border: 1px solid #b4d518;
     border-radius: 6px;
@@ -713,7 +743,7 @@ p.wc-block-components-checkout-order-summary__title-text{
 
 .archive .products .product:hover {
     /* box-shadow: 0 0 12px rgba(0, 0, 0, 0.1); */
-     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
     border: 1px solid #565b68;
 }
 
@@ -725,7 +755,7 @@ p.wc-block-components-checkout-order-summary__title-text{
 }
 
 
-a.product_type_simple{
+a.product_type_simple {
     background-color: #b4d518;
     color: #111111;
     font-weight: bold;
@@ -733,6 +763,7 @@ a.product_type_simple{
     border-radius: 8px;
     transition: background-color 0.3s ease;
 }
+
 a.product_type_simple:hover {
     background-color: #565b68;
     color: #fff;
@@ -755,22 +786,22 @@ a.product_type_simple:hover {
     color: #fff;
 }
 
-.woocommerce-result-count{
-    margin-top:17px;
+.woocommerce-result-count {
+    margin-top: 17px;
     font-size: 18px;
 }
 
 
 
-/* personalizar a exibição dos produtos na página de loja e categorias */ */
-a.woocommerce-LoopProduct-link{
+/* personalizar a exibição dos produtos na página de loja e categorias */
+*/ a.woocommerce-LoopProduct-link {
     font-size: 18px;
     font-weight: bold;
     color: #333;
     margin: 10px 0;
 }
 
-.woocommerce-Price-amount{
+.woocommerce-Price-amount {
     font-size: 20px;
     font-weight: bold;
     color: #565b68;
@@ -780,12 +811,12 @@ a.woocommerce-LoopProduct-link{
 
 
 
-.woocommerce-products-header h1{
+.woocommerce-products-header h1 {
     margin-top: 20px;
 }
 
 
-/* personalizando a tabela de detalhes do cliente na página de pedidos */ 
+/* personalizando a tabela de detalhes do cliente na página de pedidos */
 .woocommerce-customer-details address {
     background-color: #f9f9f9;
     border: 1px solid #b4d518;
@@ -813,6 +844,69 @@ a.woocommerce-LoopProduct-link{
 
 
 /* oculta a imagem do qrcode que aparece na pagina de pagamento, pra esse projeto ocultamos porque ja tem uma imagem de qrcode na pagina de detalhes do pedido, ficava duplicada */
-.mp-pix-image-container{
+.mp-pix-image-container {
     display: none;
+}
+
+
+
+
+/* personalizando o menu offcanvas do site */
+ul.main-menu-mobile {
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 10px;
+    margin-left: 0px;
+    line-height: 2.3;
+}
+
+.main-menu-mobile li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: none;
+}
+
+.offcanvas-body a.nav-link {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+}
+
+.offcanvas-body .navbar-nav {
+    margin-left: 0px;
+}
+
+
+
+
+
+/* personalizando o formulario de login e registro do WooCommerce */
+
+/* Remove floats e define responsividade nas colunas do login */
+.u-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    /* Espaçamento entre colunas */
+}
+
+.u-columns .u-column1,
+.u-columns .u-column2 {
+    float: none !important;
+    width: 100% !important;
+}
+
+@media (min-width: 768px) {
+
+    .u-columns .u-column1,
+    .u-columns .u-column2 {
+        width: calc(50% - 0.75rem) !important;
+        /* metade - gap */
+    }
 }
