@@ -333,9 +333,17 @@ table.variations label {
 
 /* Estilo personalizado para o título da pagina de carrinho */
 h1.entry-title {
-    font-weight: normal;
-    text-align: center;
+    font-size: 40px;
     margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    h1.entry-title {
+        font-size: 30px;
+        margin-top: 75px;
+        text-align: center;
+        margin-left: 15px;
+    }
 }
 
 /* Área superior dos totais do carrinho */
@@ -434,6 +442,7 @@ p.wc-block-components-checkout-order-summary__title-text {
     color: #111;
     font-size: 20px;
     font-weight: bold;
+    padding-left: 15px;
 }
 
 .wp-block-woocommerce-checkout-order-summary-block {
@@ -912,3 +921,9 @@ ul.main-menu-mobile {
 
 
 
+h2.wc-block-components-title.wc-block-components-checkout-step__title {
+    color: #111;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 15px;
+}
