@@ -38,3 +38,49 @@ Este projeto é uma loja virtual desenvolvida em WordPress com o tema Storefront
     - woocommerce-mercadopago/
     - wp-mail.smtp/
 - uploads/
+
+
+
+---
+
+## ⚙️ Funcionalidades Personalizadas
+
+- Filtro de produtos por categoria via AJAX.
+- Menu offcanvas otimizado com Bootstrap.
+- Botão de WhatsApp fixo com mensagem personalizada.
+- Layout responsivo (mobile-first).
+- Páginas WooCommerce personalizadas com classes Bootstrap.
+- Checkout com melhorias visuais e estruturais.
+- Mensagens (notices) personalizadas (WooCommerce).
+
+---
+
+## 📦 Instalação e Configuração
+
+1.  **Clone o repositório ou copie os arquivos para o seu projeto WordPress:**
+
+    ```bash
+    git clone [https://github.com/seu-usuario/academia-fit-store.git]
+
+    (https://github.com/seu-usuario/academia-fit-store.git)
+    
+    ```
+
+2.  **Ative o tema filho no painel WordPress:**
+
+    * Vá em `Aparência → Temas → Ativar storefront-child`.
+
+3.  **Certifique-se de que os plugins necessários estão instalados e ativados:**
+
+    * WooCommerce
+    * Integração Pix (caso customizada, ativar plugin)
+    * Contact Form 7 (opcional)
+
+4.  **Configure os menus:**
+
+    * `mobile_menu` para o menu mobile offcanvas
+    * `top_menu` para o menu principal do topo
+
+5.  **Configuração de páginas WooCommerce:**
+
+    * Atribua as páginas padrão do WooCommerce (Carrinho, Finalizar Compra, Minha Conta).
