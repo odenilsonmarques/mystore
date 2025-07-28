@@ -68,7 +68,7 @@ Este projeto é uma loja virtual desenvolvida em WordPress com o tema Storefront
 
 2.  **Ative o tema filho no painel WordPress:**
 
-    * Vá em `Aparência → Temas → Ativar storefront-child`.
+    * Vá em `Aparência → Temas → Ativar mystore`.
 
 3.  **Certifique-se de que os plugins necessários estão instalados e ativados:**
 
