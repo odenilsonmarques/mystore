@@ -87,3 +87,24 @@ Este projeto é uma loja virtual desenvolvida em WordPress com o tema Storefront
 5.  **Configuração de páginas WooCommerce:**
 
     * Atribua as páginas padrão do WooCommerce (Carrinho, Finalizar Compra, Minha Conta).
+
+---
+
+## 🧪 Ambiente de Desenvolvimento
+
+Para rodar este projeto, você precisará do seguinte ambiente:
+
+* **PHP:** >= 7.4
+* **WordPress:** 6.x
+* **MySQL:** 5.7+
+* **Servidor local:** LocalWP, XAMPP, Laragon ou Docker
+* **Navegador recomendado:** Chrome ou Firefox
+
+---
+
+## 🧩 Funcionalidades Extras
+
+* **QR Code Dinâmico (Pix):** Integração pronta para gerar QR Code via API.
+* **Estilização com Bootstrap:** Utilização de classes de grid, botões e alertas para um design responsivo.
+* **Suporte a múltiplos tamanhos de tela:** Media queries otimizadas para uma experiência consistente em diferentes dispositivos.
+* **Menu Offcanvas:** Inclui botão de contato direto via WhatsApp.
