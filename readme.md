@@ -1,4 +1,4 @@
-# Loja Virtual – Academia Fit Store 🏋️‍♀️
+# Loja Virtual – 🏋️‍♀️
 
 Este projeto é uma loja virtual desenvolvida em WordPress com o tema Storefront e o plugin WooCommerce, voltada para a venda de produtos do nicho fitness e academia.
 
@@ -17,4 +17,24 @@ Este projeto é uma loja virtual desenvolvida em WordPress com o tema Storefront
 ---
 
 ## 📁 Estrutura do Projeto
-
+wp-content/
+├── themes/
+│ └── mystore/
+│ └── assets/
+│ └── parts/
+│ └── woocommerce/
+│ ├── 404.php
+│ ├── footer.php
+│ ├── front-page.php
+│ ├── functions.php
+│ ├── header.php
+│ ├── headme.md
+│ ├── style.css
+│ └── storefront
+├── plugins/
+│ └── search-product/
+│ └── woo-pix-gateway/
+│ └── woocommerce/
+│ └── woocommerce-mercadopago/
+│ └── wp-mail.smtp/
+└── uploads/
