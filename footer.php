@@ -80,8 +80,20 @@
             © <?php echo date('Y'); ?> Loja Virtual – Todos os direitos reservados.
         </div>
     </div>
+
+
+    <!-- Arrumar o botão do WhatsApp, separar o CSS do HTML, adicionar hover e animação de escala. -->
+    <a href="https://wa.me/5598981061009?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20produtos%20de%20academia."
+        class="btn btn-success position-fixed"
+        style="bottom: 20px; right: 20px; z-index: 9999;"
+        target="_blank">
+        <i class="bi bi-whatsapp" style="font-size: 1.5rem;"></i>
+    </a>
+
+
 </footer>
 
 <?php wp_footer(); ?>
 </body>
+
 </html>

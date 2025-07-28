@@ -13,7 +13,7 @@
         <nav class="main-menu navbar navbar-expand-lg navbar-light py-2 fixed-top">
             <div class="container d-flex justify-content-between align-items-center flex-wrap gap-3">
                 <!-- LOGO À ESQUERDA -->
-                <a class="navbar-brand me-3 fw-bold" href="<?php echo home_url(); ?>">Loja Virtual
+                <a class="navbar-brand me-3 fw-bold" href="<?php echo home_url(); ?>">Vibe Fit
                     <!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.webp" alt="Logo" height="40" class="d-inline-block align-text-top"> -->
                 </a>
 
