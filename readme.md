@@ -60,10 +60,10 @@ Este projeto é uma loja virtual desenvolvida em WordPress com o tema Storefront
 1.  **Clone o repositório ou copie os arquivos para o seu projeto WordPress:**
 
     ```bash
-    git clone [https://github.com/seu-usuario/academia-fit-store.git]
+    git clone [https://github.com/odenilsonmarques/mystore]
 
-    (https://github.com/seu-usuario/academia-fit-store.git)
-    
+    (https://github.com/odenilsonmarques/mystore)
+
     ```
 
 2.  **Ative o tema filho no painel WordPress:**
@@ -74,7 +74,10 @@ Este projeto é uma loja virtual desenvolvida em WordPress com o tema Storefront
 
     * WooCommerce
     * Integração Pix (caso customizada, ativar plugin)
-    * Contact Form 7 (opcional)
+    * search-product
+    * woocommerce-mercadopago
+    * wp-mail.smtp
+    
 
 4.  **Configure os menus:**
 
